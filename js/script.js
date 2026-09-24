@@ -5,6 +5,12 @@
 // Eksempel: vi henter knappen ved hjælp af dens id-attribut
 const getToggleBtn = document.getElementById("toggleBtn");
 
+const getToggleText = document.getElementById("toggleText");
+
+const getToggleIcon = document.getElementById("toggleIcon");
+
+const getMoreInfo = document.getElementById("moreInfo");
+
 // Skriv selv: hent de tre andre elementer på samme måde, ved hjælp af deres id.
 // Variablerne skal hedde getToggleText, getToggleIcon og getMoreInfo
 
