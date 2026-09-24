@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Hide/Show HTML - Klasseøvelse</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="highlight-box">
+        <h2>Sådan er pengene fordelt</h2>
+
+        <p class="highlight-list">
+        Det er særligt tre områder, som lokalpolitikerne i Syddjurs Kommune har valgt at løfte i næste års budget.
+        Ifølge aftalen styrkes ældreområdet med 11,5 millioner kroner årligt, folkeskolerne tilføres 5,5 millioner kroner om året, og socialområdet får 11,5 millioner kroner ekstra om året.
+        </p>
+
+        <div id="moreInfo" hidden>
+            <h3>Ny øvelse i tilgængelighed med ARIA-attributter</h3>
+            <ul class="highlight-list">
+                <li>Ældreområdet: 11,5 mio. kr. årligt til blandt andet flere sygeplejersker i borgerteams, flere medarbejdere i plejehjemmenes aftenvagter, styrket kvalitets- og demensindsats og kompetenceløft af medarbejdere.</li>
+                <li>Folkeskolerne: 5,5 mio. kr. årligt til at reducere skolernes finansiering, når elever visiteres til specialtilbud. Derudover 1,4 mio. kr. til en tidlig og forebyggende indsats mod mistrivsel.</li>
+                <li>Socialområdet: 11,5 mio. kr. årligt ud over midler til den demografiske udvikling for at skabe et mere realistisk budgetgrundlag.</li>
+                <li>Plejeboliger: 41,9 mio. kr. til 14 ekstra demensvenlige boliger ved Frejasvænge. Der arbejdes videre med 50 plejeboliger i Ringparken i Ryomgård, og der afsættes 0,5 mio. kr. til at undersøge mulighederne for et plejehjem i Hornslet.</li>
+                <li>Børn og unge: Fortsat et højt anlægsniveau med blandt andet udbygning af Pindstrupskolen, kapacitetsudvidelse i Rønde samt investeringer i Mørke Skole, Ådalens Skole og dagtilbud.</li>
+                <li>Planlægning og erhverv: 3,2 mio. kr. årligt til at styrke kapaciteten inden for lokalplanlægning og afledte myndighedsopgaver. Der arbejdes desuden med fast-track for virksomheder med behov for planlægning eller myndighedsbehandling.</li>
+                <li>Natur: Yderligere 2 mio. kr. til natur og skovrejsning samt arbejdet med Grøn Trepart.</li>
+                <li>Cykelstier: 36,2 mio. kr. til en flerårig udbygning af cykelstinettet.</li>
+            </ul>
+        </div>
+
+        <button type="button" id="toggleBtn" class="toggle-btn" aria-expanded="false" aria-controls="moreInfo">
+            <span id="toggleIcon" class="toggle-icon" aria-hidden="true">&#9662;</span>
+            <span id="toggleText">Vis mere</span>
+        </button>
+    </main>
+
+    <!-- Husk fra dag 1: skriv scriptet, der linker til js/script.js, herunder -->
+
+</body>
+</html>
